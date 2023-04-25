@@ -32,13 +32,15 @@ int main()
 {
     ios_base::sync_with_stdio(false);
     cin.tie(nullptr); cout.tie(nullptr);
+    
 	#ifdef LOCAL
-    freopen("in.in", "r", stdin);
-    freopen("rs.out", "w", stdout);
+		freopen("in.in", "r", stdin);
+		freopen("rs.out", "w", stdout);
     #endif
-	t = 1;
+    
+    t = 1;
     #ifdef LOCAL
-    cin >> t;
+    	cin >> t;
     #endif
     
     while (t--)
