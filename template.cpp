@@ -36,10 +36,11 @@ int main()
     freopen("in.in", "r", stdin);
     freopen("rs.out", "w", stdout);
     #endif
+	t = 1;
     #ifdef LOCAL
     cin >> t;
     #endif
-    t = 1;
+    
     while (t--)
         solve();
     return 0;
