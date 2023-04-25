@@ -6,4 +6,5 @@ actual output
 ## rs.out
 your output
 
-change the name of your file to **target.cpp**
+how to use
+``make ARGS=<file_name>``
