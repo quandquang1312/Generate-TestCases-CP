@@ -13,42 +13,33 @@ typedef unsigned long long ull;
 int t, n, ti, k;
 ll a[MAXN], b[MAXN];
 vector<vector<vector<int>>> dp(n+1,vector<vector<int>>(k+1,vector<int>(3,0)));
+string str;
 
 void solve()
 {
     cin >> n;
-    vector<ll> neg, pos;
-    FOR(i,0,n) {
-        cin >> a[i];
-        if (a[i] < 0) neg.push_back(a[i]);
-        else pos.push_back(a[i]);
-    }
+	cin >> str;
+	int g=0,p=0;
+	for (auto e : str) {
+		if (e == 'o') g++;
+		if (e == 'x') p++;
+	}
 
-    sort(neg.begin(), neg.end());
-    sort(pos.begin(), pos.end(), greater<ll>());
-
-    ll rs=LONG_LONG_MIN;
-    if (neg.size() >= 2)
-        rs = max(rs, neg[0]*neg[1]);
-
-    if (pos.size() >= 2)
-        rs = max(rs, pos[0]*pos[1]);
-
-    if (pos.size() && neg.size())
-        rs = max(rs, pos[0] * neg[neg.size()-1]);
-
-    LOG(rs);
+	cout << (g && !p ? "Yes\n" : "No\n");
 }
 
 int main()
 {
     ios_base::sync_with_stdio(false);
     cin.tie(nullptr); cout.tie(nullptr);
-
+	#ifdef LOCAL
     freopen("in.in", "r", stdin);
-	freopen("rs.out", "w", stdout);
-    
+    freopen("rs.out", "w", stdout);
+    #endif
+    #ifdef LOCAL
     cin >> t;
+    #endif
+    t = 1;
     while (t--)
         solve();
     return 0;
