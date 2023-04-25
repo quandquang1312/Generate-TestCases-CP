@@ -17,15 +17,7 @@ string str;
 
 void solve()
 {
-    cin >> n;
-	cin >> str;
-	int g=0,p=0;
-	for (auto e : str) {
-		if (e == 'o') g++;
-		if (e == 'x') p++;
-	}
 
-	cout << (g && !p ? "Yes\n" : "No\n");
 }
 
 int main()
@@ -39,11 +31,11 @@ int main()
     #endif
     
     t = 1;
-    #ifdef LOCAL
+	bool cintest = true;
+    if (cintest)
     	cin >> t;
-    #endif
     
-    while (t--)
+	while (t--)
         solve();
     return 0;
 }
