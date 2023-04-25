@@ -1,10 +1,12 @@
 # Requirement
 ## in.in
-input
+input test case
+
 ## out.out
 actual output
+
 ## rs.out
-your output
+your output should be write to ``rs.out`` file
 
 how to use
 ``make ARGS=<file_name>``
