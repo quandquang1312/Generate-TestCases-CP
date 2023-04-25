@@ -9,4 +9,4 @@ actual output
 your output should be write to ``rs.out`` file
 
 how to use
-``make ARGS=<file_name>``
+``make F=<file_name>``
