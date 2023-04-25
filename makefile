@@ -1,6 +1,6 @@
 CXX = g++
-EXECUTABLE = B
-SOURCE = ./B.cpp
+EXECUTABLE = $(ARGS)
+SOURCE = ./$(ARGS).cpp
 CXXFLAGS = -Wall -std=c++11
 
 PYTHON = python3
