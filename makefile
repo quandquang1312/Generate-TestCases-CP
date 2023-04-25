@@ -1,7 +1,7 @@
 CXX = g++
 EXECUTABLE = $(ARGS)
 SOURCE = ./$(ARGS).cpp
-CXXFLAGS = -Wall -std=c++11
+CXXFLAGS = -Wall -std=c++11 -DLOCAL
 
 PYTHON = python3
 PY_SOURCE = ./test.py
