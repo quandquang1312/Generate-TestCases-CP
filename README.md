@@ -1,15 +1,13 @@
 # Requirement
-## in.in
-input test case
+**Parsing input and output properly**
+``in.in``: input test case
+``out.out``: input actual output
+``rs.out``: your output should be written here
 
-## out.out
-input actual output
+## how to use
 
-## rs.out
-your output should be write to ``rs.out`` file
-
-matching output with answer
+**matching output with answer**
 ``make F=<file_name>``
 
-turn on debug mode
+**turn on debug mode**
 ``mak F=<file_name> D=D``
