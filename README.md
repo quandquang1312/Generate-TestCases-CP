@@ -1,7 +1,9 @@
 # Requirement
 **Parsing input and output properly**
 ``in.in``: input test case
+
 ``out.out``: input actual output
+
 ``rs.out``: your output should be written here
 
 ## how to use
