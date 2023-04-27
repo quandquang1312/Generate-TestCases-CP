@@ -1,5 +1,6 @@
 # Requirement
 **Parsing input and output properly**
+
 ``in.in``: input test case
 
 ``out.out``: input actual output
