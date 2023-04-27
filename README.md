@@ -7,7 +7,7 @@
 
 ``rs.out``: your output should be written here
 
-## how to use
+### how to use
 
 **matching output with answer**
 ``make F=<file_name>``
