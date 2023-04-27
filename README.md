@@ -15,4 +15,4 @@
 ``make F=<file_name>``
 
 **turn on debug mode**
-``mak F=<file_name> D=D``
+``make F=<file_name> D=D``
