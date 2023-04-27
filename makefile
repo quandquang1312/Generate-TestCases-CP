@@ -13,7 +13,7 @@ $(EXECUTABLE): $(SOURCE)
 run_cpp:
 	./$(EXECUTABLE)
 run_py:
-	$(PYTHON) $(PY_SOURCE)
+	$(PYTHON) $(PY_SOURCE) $(D)
 
 clean:
 	rm -f $(EXECUTABLE)
