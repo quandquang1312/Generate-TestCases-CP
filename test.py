@@ -21,7 +21,7 @@ if __name__ == '__main__':
 
     if (len(sys.argv) > 1 and sys.argv[1] == 'D'):
         print('\033[1;31mDebug is on\033[0;0m')
-        for elements in out:
+        for elements in rs:
             for element in elements:
                 print(element, end=' ')  
             print()
