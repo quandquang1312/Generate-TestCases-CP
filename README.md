@@ -3,7 +3,7 @@
 input test case
 
 ## out.out
-actual output
+input actual output
 
 ## rs.out
 your output should be write to ``rs.out`` file
