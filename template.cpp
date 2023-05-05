@@ -4,7 +4,7 @@ using namespace std;
 typedef long long ll;
 typedef unsigned long long ull;
 
-#define MOD (ll)1e9+7
+const ll MOD = 1000000007;
 #define MAXN 200100
 
 #define FOR(i,a,b) for (int i=a; i<b; i++) 
