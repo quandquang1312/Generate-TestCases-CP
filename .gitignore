@@ -1,0 +1,12 @@
+# Ignore .out, .exe files
+*.exe
+*.out
+
+# Ignore input, output, txt, ans files
+*.out
+*.in
+*.txt
+*.ans
+
+# Ignore /vscode
+/.vscode/
