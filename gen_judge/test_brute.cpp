@@ -2,8 +2,11 @@
 #include<bits/stdc++.h>
 using namespace std;
 int main(){
-    freopen("gen.txt", "r", stdin);
-    freopen("brute.ans", "w", stdout);
+    #ifdef LOCAL
+        freopen("gen.txt", "r", stdin);
+        freopen("brute.ans", "w", stdout);
+    #endif
+
     int n,t;
     cin >> n >> t;
     string s;
@@ -27,4 +30,6 @@ int main(){
         }
     }
     cout << cnt << endl;
+
+    return 0;
 }

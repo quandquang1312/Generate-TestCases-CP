@@ -39,8 +39,8 @@ int main(int argc, char* argv[]) {
         a1 a2 a3 ... an (ai <= 1e3)
         b1 b2 b3 ... bm (bi <= 1e3)
         */
-        int MIN_N = 1, MAX_N = 6;
-        int MIN_A = -10, MAX_A = 10;
+        int MIN_N = 6, MAX_N = 100;
+        int MIN_A = -1e9, MAX_A = 1e9;
         int MIN_M = 1, MAX_M = 10;
         int MIN_B = 1, MAX_B = 1e3;
 
@@ -61,12 +61,12 @@ int main(int argc, char* argv[]) {
         inp.close();
 
         // Build run brute forces code
-        system("g++ test_brute.cpp -o brute.out");
-        system("brute.out");
+        system("g++ test_brute.cpp -DLOCAL -o brute");
+        system("brute");
 
         // Build run solution code
-        system("g++ test_solve.cpp -o solve.out");
-        system("solve.out");
+        system("g++ test_solve.cpp -DLOCAL -o solve");
+        system("solve");
 
         int rs = -1;
         #if defined(_WIN32) || defined(_WIN64)
