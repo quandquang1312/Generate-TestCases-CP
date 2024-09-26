@@ -1,19 +1,30 @@
-#include <bits/stdc++.h>
+//https://atcoder.jp/contests/abc360/tasks/abc360_d
+#include<bits/stdc++.h>
 using namespace std;
-
-int main() {
+int main(){
     freopen("gen.txt", "r", stdin);
     freopen("brute.ans", "w", stdout);
+    int n,t;
+    cin >> n >> t;
+    string s;
+    cin >> s;
+    vector<int> index_pos, index_neg;
+    for(int i = 0, x; i < n; i++){
+        cin >> x;
+        if (s[i] == '1') index_pos.push_back(x);
+        else index_neg.push_back(x);
+    }
 
-    int n, m;
-    cin >> n >> m;
-    vector<int> a(n), b(m);
-    for (auto &e : a) cin >> e;
-    for (auto &e : b) cin >> e;
-
-    sort(a.begin(), a.end());
-    sort(b.begin(), b.end());
-    cout << a[n - 1] + b[m - 1] << endl;
-
-    return 0;
+    int cnt = 0;
+    for (int i = 0; i < index_pos.size(); i++){
+        for (int j = 0; j < index_neg.size(); j++) {
+            if (index_pos[i] > index_neg[j]) continue;
+            double maxi = index_pos[i] + t;
+            double maxj = index_neg[j] - t;
+            if (maxi >= maxj) {
+                cnt++;
+            }
+        }
+    }
+    cout << cnt << endl;
 }
